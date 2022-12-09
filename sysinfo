@@ -1,4 +1,5 @@
-#!/bin/bash
+#  GNU nano 7.0                                                       sverigesradio
+#!/usr/bin/env bash
 # sudo pacman -S wmctrl
 
 OS=$(cat /etc/lsb-release | awk -F '=' '/DISTRIB_ID/ {print $2}')
@@ -31,17 +32,16 @@ PKGINST=$(pacman -Q | wc -l)
  echo  ""
  echo -e "\e[33m   [  sysinfo  ]"
  echo -e "\e[94m     \e[39m$USER@$HOSTNAME"
- echo -e "\e[94m    \e[39m$MODEL"
- echo -e "\e[94m     \e[39m$CPU"
  echo -e "\e[94m     \e[39m$KERNEL ($OS)"
  echo -e "\e[94m     \e[39m$UPTIME"
  echo -e "\e[94m     \e[39m$SHELL"
- echo -e "\e[94m     \e[39m$RESOLUTION"
+ echo -e "\e[94m     \e[39m$MODEL"
+ echo -e "\e[94m     \e[39m$CPU"
  #echo -e "\e[94m     \e[39m$GPU"
  echo -e "\e[33m   [  wm / de  ]"
  echo -e "\e[94m     \e[39m$DE"
- echo -e "\e[94m     \e[39m$GtkTheme"
- echo -e "\e[94m     \e[39m$GtkIcon"
+ echo -e "\e[94m     \e[39m$RESOLUTION"
+ echo -e "\e[94m     \e[39m$GtkTheme / $GtkIcon"
  #echo -e "\e[94m     \e[39m$BIRTH"
  echo -e "\e[33m   [  pkg: inst / up  ]"
  echo -e "\e[94m     \e[39m$PKGINST / $PKG"
