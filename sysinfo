@@ -1,5 +1,5 @@
-#  GNU nano 7.0                                                       sverigesradio
 #!/usr/bin/env bash
+
 # sudo pacman -S wmctrl
 
 OS=$(cat /etc/lsb-release | awk -F '=' '/DISTRIB_ID/ {print $2}')
