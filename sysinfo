@@ -1,5 +1,6 @@
 #!/bin/bash
 # sudo pacman -S wmctrl
+# optional: ttf-nerd-fonts-symbols
 
 OS=$(cat /etc/lsb-release | awk -F '=' '/DISTRIB_ID/ {print $2}')
 KERNEL=$(uname -r)
